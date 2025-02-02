@@ -8,4 +8,21 @@ Sequential and parallel codes for the recursive elimination version of the O-Qui
 5. utils.jl: This file generates several types of test data and includes some other preparation functions.
 6. main.jl: These files are included in main.jl to run the algorithms.
 
-A "result" directory needs to be created to store the results of the algorithms.
+
+**Run the programs**
+- Open a terminal and go to the directory containing the code.
+julia main.jl
+
+- Run Algorithms in parallel mode.
+julia -t numberOfThreads main.jl
+
+**Note**
+Creat a file "result" in the directory containing the codes.
+
+**Setting**
+Benchmarking mode
+Set benchmarking = true in the main functions.
+
+Export the convex hull to file
+Set benchmarking = false and exportResult = true in the main functions.
+
